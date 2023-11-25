@@ -1,0 +1,189 @@
+
+body {
+ 
+background-image: linear-gradient(160deg, #109e7b 10%, #80D0C7 100%);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin-top: 1em;
+  color: #FFFef2;
+  text-align: center;
+}
+
+
+#OpenAI{
+  padding-right: 10em;
+  font-size: 20px;
+}
+#nav-margin{
+  margin-left: 10em;
+}
+
+ul.list-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%; /* This will make the width of the ul as wide as its content */
+  text-align: center;
+}
+
+
+a:link{
+  text-decoration: none;
+ 
+}
+a:hover {
+  background-color: #109e7b;
+}
+#github, #linkedin, #georgian {
+  color:  #FFFef2;
+}
+footer {
+  margin-top: 5em;
+  background-color: #242526;
+  padding: 20px 0;
+  text-align: center;
+  color:  #FFFef2;
+  height: 100px;
+}
+.content {
+  min-height: calc(80vh - 100px);
+}
+
+.nav-bgcolor{
+
+  background-color: #242526;
+
+}
+
+.card-bgcolor{
+  /* background-color:#04d9ff ; */
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  color:  #FFFef2;
+
+}
+
+.nav-link, .nav-link active{
+  color: white;
+}
+
+.card {
+  width: 75%; /* or any width you prefer */
+  /* Other styles */
+}
+
+.container-fluid {
+  max-width: 1200px; /* or any max-width you prefer */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the top */
+  height: 100vh; /* Keeps the full height */
+  text-align: center;
+  padding-top: 60px; /* Adjust this value to move the elements lower from the top */
+}
+
+
+textarea {
+  width: 80%; /* Increase the width */
+  border-radius: 10px; /* Rounded edges */
+  margin-top: 20px;
+  padding: 10px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded edges */
+  /* You can also add styles for background color, border, etc., if you want */
+}
+
+/* Centering Container */
+.centered-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Button Styling */
+.generate-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white; /* Adjust color as needed */
+  color: black; /* Adjust text color as needed */
+  border: none;
+}
+
+/* Textarea for Story Output */
+.story-output {
+  width: 80%; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #ccc; /* Light grey border */
+  resize: none; /* Prevent resizing */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar-toggler-icon  {
+  background-color: white; /* Change the background of the toggler */
+}
+
+
+.navbar-toggler-icon svg {
+  fill: white; /* Change the color of the SVG itself */
+}
+
+
+/* Example: Styling for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+  
+}
+
+/* Assuming default styles for larger screens (desktop view) where cards are side by side */
+
+/* For medium screens */
+@media (max-width: 992px) {
+  .card {
+      margin: 0 auto 20px; /* Adds margin to the bottom of each card for separation */
+      display: block; 
+  }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .card {
+      width: 90%; /* or any desired width */
+      margin: 0 auto 20px;
+  }
+}
+
+/* For extra-small screens */
+@media (max-width: 576px) {
+  .card {
+      width: 100%; 
+      margin-bottom: 20px;
+  }
+}
+

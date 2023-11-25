@@ -1,0 +1,16 @@
+<h1>Story</h1>
+
+<div class="centered-container2">
+    <button id="generateStoryBtn" class="generate-btn">Generate Random Story</button>
+    <textarea id="storyOutput" class="story-output" readonly></textarea>
+</div>
+
+<script>
+    document.getElementById('generateStoryBtn').addEventListener('click', async function() {
+        const response = await fetch('/generate-story', { method: 'POST' });
+        const result = await response.json();
+        if (result.story) {
+            document.getElementById('storyOutput').textContent = result.story;
+        }
+    });
+</script>

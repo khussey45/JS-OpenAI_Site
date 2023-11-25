@@ -1,0 +1,27 @@
+<h1>Text To Speech</h1>
+<div class="centered-container">
+    
+    <form id="speechForm">
+        <textarea id="textInput" placeholder="Enter your text here"></textarea>
+        <button type="submit">Convert</button>
+    </form>
+    <audio id="audioPlayer" controls style="display: none;"></audio>
+<script>
+    document.getElementById('speechForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const text = document.getElementById('textInput').value;
+        const response = await fetch('/generate-speech', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text: text })
+        });
+        const result = await response.json();
+        if (result.url) {
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioPlayer.src = result.url;
+            audioPlayer.style.display = 'block';
+        }
+    });
+</script>
