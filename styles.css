@@ -88,11 +88,12 @@ footer {
   height: 100vh; /* Keeps the full height */
   text-align: center;
   padding-top: 60px; /* Adjust this value to move the elements lower from the top */
+
 }
 
 
 textarea {
-  width: 80%; /* Increase the width */
+  width: 500px; /* Increase the width */
   border-radius: 10px; /* Rounded edges */
   margin-top: 20px;
   padding: 10px;
