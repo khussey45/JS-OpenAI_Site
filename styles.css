@@ -72,6 +72,9 @@ footer {
   width: 75%; /* or any width you prefer */
   /* Other styles */
 }
+.list-group-item, a {
+  color: black;
+}
 
 .container-fluid {
   max-width: 1200px; /* or any max-width you prefer */

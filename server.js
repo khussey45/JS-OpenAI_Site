@@ -54,7 +54,7 @@ app.post('/generate-speech', async (req, res) => {
 app.post('/generate-story', async (req, res) => {
     try {
         const response = await axios.post(apiUrl, {
-            prompt: "Write a short story about programmers solving AGI", // or any other prompt
+            prompt: "Write a short story about programmers discovering aliens", 
             max_tokens: 150
         }, {
             headers: {
