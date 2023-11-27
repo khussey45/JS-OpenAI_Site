@@ -136,11 +136,13 @@ button {
 .story-output {
   width: 80%; /* Adjust width as needed */
   height: 300px; /* Adjust height as needed */
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   background-color: white;
   border: 1px solid #ccc; /* Light grey border */
   resize: none; /* Prevent resizing */
+  overflow-y: auto;
+  text-align: left;
 }
 
 img {

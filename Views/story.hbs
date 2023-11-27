@@ -1,6 +1,6 @@
 <h1>Story</h1>
 
-<div class="centered-container2">
+<div class="centered-container">
     <button id="generateStoryBtn" class="generate-btn">Generate Random Story</button>
     <textarea id="storyOutput" class="story-output" readonly></textarea>
 </div>
@@ -10,7 +10,9 @@
         const response = await fetch('/generate-story', { method: 'POST' });
         const result = await response.json();
         if (result.story) {
-            document.getElementById('storyOutput').textContent = result.story;
+            const storyOutput = document.getElementById('storyOutput');
+            storyOutput.value = result.story;
+            storyOutput.scrollTop = 0;
         }
     });
 </script>
