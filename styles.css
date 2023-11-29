@@ -1,8 +1,9 @@
 
 body {
  
-background-image: linear-gradient(160deg,   #CBC3E3 10%,#80D0C7 100%);
+  background-image: linear-gradient(160deg,   #CBC3E3 10%,#80D0C7 100%);
   background-repeat: no-repeat;
+
  
 }
 
@@ -14,12 +15,14 @@ h1 {
 
 
 #OpenAI{
-  padding-right: 10em;
+  padding-right: 15em;
   font-size: 20px;
 }
-#nav-margin{
+/* #nav-margin{
   margin-left: 10em;
-}
+  
+} */
+
 
 ul.list-group {
   display: block;
@@ -36,6 +39,7 @@ a:link{
 }
 a:hover {
   background-color: #109e7b;
+  opacity: 0.9;
   /* background-image: linear-gradient(160deg,   #CBC3E3 10%,#80D0C7 100%); */
   
   transform: scale(1.3);
@@ -177,6 +181,7 @@ img {
 
 
 
+/* Smaller Screens */
 @media (max-width: 600px) {
   body {
       background-color: lightblue;
@@ -188,6 +193,7 @@ img {
     padding: 10px;
     resize: vertical;
   }
+
   
 }
 
@@ -205,6 +211,7 @@ img {
     padding: 10px;
     resize: vertical;
   }
+  
 }
 
 @media (max-width: 768px) {
